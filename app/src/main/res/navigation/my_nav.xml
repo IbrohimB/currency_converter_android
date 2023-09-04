@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/lengthFragment">
+
+    <fragment
+        android:id="@+id/lengthFragment"
+        android:name="com.botirov.convertunit.LengthFragment"
+        android:label="fragment_length"
+        tools:layout="@layout/fragment_length" >
+        <action
+            android:id="@+id/action_lengthFragment_to_massFragment"
+            app:destination="@id/massFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/massFragment"
+        android:name="com.botirov.convertunit.MassFragment"
+        android:label="fragment_mass"
+        tools:layout="@layout/fragment_mass" >
+        <action
+            android:id="@+id/action_massFragment_to_lengthFragment"
+            app:destination="@id/lengthFragment" />
+    </fragment>
+</navigation>

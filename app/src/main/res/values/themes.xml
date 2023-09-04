@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ConvertUnit" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/grey</item>
+    </style>
+
+    <style name="MyTabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item> <!-- Adjust this size as required -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.ConvertUnit" parent="Base.Theme.ConvertUnit" />
+</resources>
